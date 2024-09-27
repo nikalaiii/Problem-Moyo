@@ -1,4 +1,5 @@
 * {
+  /* Скидання параметрів браузера */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,12 +11,13 @@ body {
 }
 
 header {
+  /* материньска позиція і вирівнювання */
   position: relative;
   display: flex;
   align-items: center;
   width: 100%;
   height: 60px;
-  margin-bottom: 20px; /* Відступ між панелями */
+  margin-bottom: 20px;
 }
 
 /* Логотип */
@@ -31,6 +33,7 @@ header {
 }
 
 nav {
+  /* навігаційні панелі */
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -40,10 +43,13 @@ nav {
   border: 1px white solid;
 }
 
-/* Ширина навігаційних панелей */
+/* навігаційна панель 1 */
+
 .nav-1200 {
   width: 1200px;
 }
+
+/* навігаційна панель 2 */
 
 .nav-1024 {
   width: 1024px;
@@ -69,18 +75,19 @@ nav {
 }
 
 .link_a {
+  /* посилання */
   text-decoration: none;
   justify-content: center;
   color: #000;
   display: flex;
   align-items: center;
-  height: 100%; /* Щоб вирівняти посилання по вертикалі */
+  height: 100%;
   padding-top: 22px;
   padding-bottom: 23px;
 }
 
 .link_a:hover {
-  color: #00acdc; /* Зміна кольору при наведенні */
+  color: #00acdc;
 }
 
 .link_a:active {
@@ -88,7 +95,6 @@ nav {
   text-decoration: underline;
 }
 
-/* Активне посилання з лінією підкреслення */
 .is-active {
   position: relative;
   color: #00acdc;
@@ -98,10 +104,10 @@ nav {
   content: '';
   display: block;
   width: 100%;
-  height: 4px; /* Висота лінії */
+  height: 4px;
   background-color: #00acdc;
-  border-radius: 2px; /* Заокруглення лінії */
+  border-radius: 2px;
   position: absolute;
-  bottom: 0; /* Лінія знаходиться на самому низу nav */
+  bottom: 0;
   left: 0;
 }
